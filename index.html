@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mike - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="menu_profile">
+          <div>Mike</div>
+          <div class="menu_contact">
+            <div class="contact_info">
+              <img src="./images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+             mike@test.com
+            </div>
+            <div class="contact_info">
+              <img src="./images/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+              +123456789
+            </div>
+          </div>
+          
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="about_me">
+      <div>
+        <img src="./images/profile.png" class="profile_image"/>
+      </div>
+      <div>
+          <h1>
+            Hi, I'm Mike! <img src="./images/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I'm studying HTML, CSS, JavaScript and NodeJs.
+          </p>
+          <p>
+            I want to be a full stack developer
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+        <div class="all_skills">
+        <div class="skill">
+          <img src="./images/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="./images/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="./images/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>3 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="./images/react.png"/>
+            <h6>React</h6>
+            <p>1 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="./images/java.png"/>
+            <h6>Java</h6>
+            <p>2 years experience</p>
+          </div> 
+        <div class="skill">
+            <img src="./images/node.png"/>
+            <h6>.Net</h6>
+            <p>6 years experience</p>
+        </div>             
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>PDF reports</h3>
+            <ul>
+              <li>The system will allow the collection of necessary data, its processing, and the automatic generation of customized PDF documents, including titles, tables, charts, and other relevant elements.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Email notifications</h3>
+            <ul>
+              <li>The tool will allow the identification of expiration dates recorded in the system and send automatic alerts to the relevant parties, with detailed information about the contract and the required actions.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Medical history</h3>
+            <ul>
+              <li>The system will allow the registration of information such as consultations, diagnoses, treatments, medical history, and study results, facilitating access to authorized information by the relevant personnel.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+            Throughout the project, he proved to be a responsible, organized, and committed individual.
+            He excelled at thoroughly analyzing requirements, proposing appropriate solutions, and maintaining a clear code structure.
+            Furthermore, he consistently performed testing to identify and correct errors, striving to deliver high-quality, functional software.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+            I highly recommend his work, as he demonstrated excellent skills in addressing technical problems and finding efficient solutions.
+            Throughout the development process, he showed a great aptitude for learning new tools, adapting to changes, and working in an organized manner.
+            Furthermore, he maintained a positive attitude in the face of challenges and was willing to make improvements based on testing and feedback.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+            During his participation in the software development project, he demonstrated commitment, responsibility, and attention to detail.
+            He actively participated in the different stages of the project, from analysis and design to implementation and validation of functionalities.
+            His ability to solve problems, meet established objectives, and maintain good programming practices was fundamental to achieving a successful outcome.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#about-me">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->  
+          <img src="./images/uparrow.png"/>    
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+        <img src="./images/success.png"/>
+        <h3><!-- Add appropriate text here-->
+            Thanks for leaving a recommendation! 
+        </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+  </body>
+</html>
