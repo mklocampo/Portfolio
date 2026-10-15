@@ -89,11 +89,13 @@ section {
     font-size: 65px;
     margin-top: 90px;
     color: #7600bc;
+    text-align: center;
   }
 
   p {
     font-size: 25px;
     color: rgb(128, 128, 128);
+    text-align: center;
   }
 }
 
